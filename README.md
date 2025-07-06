@@ -1,7 +1,7 @@
 
 # PokéSearch
 
-**PokéSearch** is a modern web application that allows users to search, explore, and discover Pokémon using the [PokéAPI](https://https://pokeapi.co/). It provides an intuitive interface for browsing Pokémon data, including images, types, abilities, and other stats.
+**PokéSearch** is a modern web application that allows users to search, explore, and discover Pokémon using the [PokéAPI](https://pokeapi.co/). It provides an intuitive interface for browsing Pokémon data, including images, types, abilities, and other stats.
 
 ## 🌟 Features
 
@@ -66,6 +66,6 @@ You can configure some settings in the `.env` file:
 
 ## 🙌 Acknowledgements
 
-- [PokéAPI](https://Pokéapi.co/)  
+- [PokéAPI](https://Pokeapi.co/)  
 - [React](https://reactjs.org/)  
 - [Vite](https://vitejs.dev/)
