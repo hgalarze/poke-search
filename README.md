@@ -1,69 +1,71 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# PokéSearch
 
-Currently, two official plugins are available:
+**PokéSearch** is a modern web application that allows users to search, explore, and discover Pokémon using the [PokéAPI](https://https://pokeapi.co/). It provides an intuitive interface for browsing Pokémon data, including images, types, abilities, and other stats.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- 🔍 **Search Pokémon** by name or show all.
+- 📄 **Detailed Pokémon profiles** showing sprites, types, abilities, stats, and more.
+- 📊 **Pagination** for listing Pokémon in batches.
+- 🎨 **Responsive UI** with modern design, optimized for desktop and mobile.
+- ⚡ **Fast and lightweight**, powered by React and Vite.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tech Stack
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React** — Frontend framework
+- **Vite** — Build tool
+- **TypeScript / JavaScript** — Language
+- **Tailwind CSS**
+- **PokéAPI** — External data source
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 📦 Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Clone the repository:
+
+```bash
+git clone https://github.com/hgalarze/poke-search.git
+cd poke-search
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+Customize the `.env` file (by default, it uses the PokéAPI base URL and pagination settings):
+
+```bash
+VITE_POKEMON_API_BASE_URL=https://pokeapi.co/api/v2/pokemon/
+VITE_PAGINATION_ITEMS_PER_PAGE=20
+VITE_PAGINATION_MAX_VISIBLE_PAGES=5
+VITE_PAGINATION_DEFAULT_START_PAGE=1
+```
+
+Run locally:
+
+```bash
+npm run dev
+```
+
+## ⚙️ Configuration
+
+You can configure some settings in the `.env` file:
+
+- `VITE_POKEMON_API_BASE_UR` — API base URL
+- `VITE_PAGINATION_ITEMS_PER_PAGE` — Number of Pokémon per page
+- `VITE_PAGINATION_MAX_VISIBLE_PAGES` — Max visible pagination links in pagination controls
+- `VITE_PAGINATION_DEFAULT_START_PAGE` — Default start page for pagination
+
+## 🖼️ Screenshots
+
+![PokéSearch Home](docs/img/image.png)
+![PokéSearch Results](docs/img/image2.png)
+![PokéSearch Details](docs/img/image3.png)
+
+## 🙌 Acknowledgements
+
+- [PokéAPI](https://Pokéapi.co/)  
+- [React](https://reactjs.org/)  
+- [Vite](https://vitejs.dev/)
