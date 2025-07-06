@@ -19,6 +19,10 @@
 - **Tailwind CSS**
 - **PokéAPI** — External data source
 
+## 🔗 Live Demo
+
+You can try PokeSearch live here: [https://poke-search-sigma.vercel.app/](https://poke-search-sigma.vercel.app/)
+
 ## 📦 Installation
 
 Clone the repository:
